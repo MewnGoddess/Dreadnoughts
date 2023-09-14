@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!-- Turret -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="MZ_MobileWorker_Turret"]/projectile</xpath>
+				<value>
+					<projectile>Bullet_30x173mmNATO_AP</projectile>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="MZ_MobileWorker_Turret"]/projectileShifting</xpath>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="MZ_MobileWorker_Turret"]/reloadTimer</xpath>
+				<value>
+					<reloadTimer>5</reloadTimer>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="MZ_MobileWorker_Turret"]/warmUpTimer</xpath>
+				<value>
+					<warmUpTimer>3</warmUpTimer>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="MZ_MobileWorker_Turret"]/chargePerAmmoCount</xpath>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="MZ_MobileWorker_Turret"]/genericAmmo</xpath>
+				<value>
+					<genericAmmo>false</genericAmmo>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="MZ_MobileWorker_Turret"]/maxRange</xpath>
+				<value>
+					<maxRange>80</maxRange>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/Vehicles.VehicleTurretDef[defName="MZ_MobileWorker_Turret"]/ammunition/thingDefs</xpath>
+                <value>
+                    <thingDefs>
+                        <li>Ammo_30x173mmNATO_AP</li>
+                        <li>Ammo_30x173mmNATO_Incendiary</li>
+                        <li>Ammo_30x173mmNATO_HE</li>
+                        <li>Ammo_30x173mmNATO_Sabot</li>
+                    </thingDefs>
+                </value>
+            </li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="MZ_MobileWorker_Turret"]</xpath>
+				<value>
+					<li Class="Vehicles.CETurretDataDefModExtension">
+						<ammoSet>AmmoSet_30x173mmNATO</ammoSet>
+						<shotHeight>2.5</shotHeight>
+						<speed>124</speed>
+						<sway>0.82</sway>
+						<spread>0.01</spread>
+					</li>
+				</value>
+			</li>
+
+			<!-- Turret Sub-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="FA_MW_GrenadeLauncher"]/projectile</xpath>
+				<value>
+					<projectile>Bullet_40x46mmGrenade_Smoke</projectile>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="FA_MW_GrenadeLauncher"]/chargePerAmmoCount</xpath>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="FA_MW_GrenadeLauncher"]/genericAmmo</xpath>
+				<value>
+					<genericAmmo>false</genericAmmo>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/Vehicles.VehicleTurretDef[defName="FA_MW_GrenadeLauncher"]/ammunition/thingDefs</xpath>
+                <value>
+                    <thingDefs>
+						<li>Ammo_40x46mmGrenade_Smoke</li>
+						<li>Ammo_40x46mmGrenade_HE</li>
+						<li>Ammo_40x46mmGrenade_HE_TFuzed</li>
+						<li>Ammo_40x46mmGrenade_HEDP</li>
+						<li>Ammo_40x46mmGrenade_EMP</li>
+                    </thingDefs>
+                </value>
+            </li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/Vehicles.VehicleTurretDef[defName="FA_MW_GrenadeLauncher"]</xpath>
+				<value>
+					<li Class="Vehicles.CETurretDataDefModExtension">
+						<ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+						<shotHeight>2</shotHeight>
+						<speed>20</speed>
+						<sway>1</sway>
+						<spread>0.5</spread>
+					</li>
+				</value>
+			</li>
+
+			<!-- Vehicle -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/statBases/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>20</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/statBases/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>10</ArmorRating_Sharp>
+				</value>
+			</li>
+			<!-- <li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/vehicleStats/CargoCapacity</xpath>
+				<value>
+					<CargoCapacity>200</CargoCapacity>
+				</value>
+			</li> -->
+
+			<!-- 正面裝甲 -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="FrontArmorPlating"]/health</xpath>
+				<value>
+					<health>200</health>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="FrontArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>80</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="FrontArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>40</ArmorRating_Sharp>
+				</value>
+			</li>
+			<!-- 側面裝甲左 -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="LeftArmorPlating"]/health</xpath>
+				<value>
+					<health>200</health>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="LeftArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>64</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="LeftArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>32</ArmorRating_Sharp>
+				</value>
+			</li>
+			<!-- 側面裝甲右 -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="RightArmorPlating"]/health</xpath>
+				<value>
+					<health>200</health>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="RightArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>64</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="RightArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>32</ArmorRating_Sharp>
+				</value>
+			</li>
+
+			<!-- 背面裝甲 -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="BackArmorPlating"]/health</xpath>
+				<value>
+					<health>200</health>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="RoofArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>30</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="RoofArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>15</ArmorRating_Sharp>
+				</value>
+			</li>
+
+			<!-- 頂部裝甲 -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="RoofArmorPlating"]/health</xpath>
+				<value>
+					<health>200</health>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="RoofArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>50</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="RoofArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>25</ArmorRating_Sharp>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
