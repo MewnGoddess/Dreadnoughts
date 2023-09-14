@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 主砲的Def -->
+
+  <MZ_MobileWorker_Turret.label>主砲</MZ_MobileWorker_Turret.label>
+  <MZ_MobileWorker_Turret.fireModes.0.label>點射</MZ_MobileWorker_Turret.fireModes.0.label>
+  <MZ_MobileWorker_Turret.fireModes.1.label>連射</MZ_MobileWorker_Turret.fireModes.1.label>
+  <MZ_MobileWorker_Turret.fireModes.2.label>壓制</MZ_MobileWorker_Turret.fireModes.2.label>
+
+  <FA_MW_GrenadeLauncher.label>榴彈發射裝置</FA_MW_GrenadeLauncher.label>
+  <FA_MW_GrenadeLauncher.fireModes.0.label>點射</FA_MW_GrenadeLauncher.fireModes.0.label>
+  <FA_MW_GrenadeLauncher.fireModes.1.label>連射</FA_MW_GrenadeLauncher.fireModes.1.label>
+
+
+</LanguageData>
