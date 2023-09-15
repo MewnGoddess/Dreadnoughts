@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Dreadnought</name>
-	<author>Kost</author>
-	<packageId>Kost.Dread</packageId>
-	<description>todo.</description>
+	<author>Kytheron</author>
+	<packageId>Kyhtheron.Dread</packageId>
+	<description>Dreadnought mod</description>
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
