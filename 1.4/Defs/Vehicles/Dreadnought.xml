@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable"><!-- 建築型態的載具，基本上與BuildingDef相同-->
+  <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
 		<defName>Dreadnought_Blueprint</defName>
 		<label>Dreadnought</label>
 		<description>Dreadnought description</description>
@@ -24,7 +24,7 @@
 			<Plasteel>50</Plasteel>
 			<Steel>200</Steel>
 		</costList>
-		<thingToSpawn>Dreadnought</thingToSpawn>	<!-- 建造後生成的載具Kind,這是與建築唯一不一樣的-->
+		<thingToSpawn>Dreadnought</thingToSpawn>
 		<designationCategory>VF_Vehicles</designationCategory>	
 		<researchPrerequisites>
 			<li>Machining</li>
@@ -32,7 +32,6 @@
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>	
 	</Vehicles.VehicleBuildDef>
 
-	<!-- 載具本體 -->
 	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 		<defName>Dreadnought</defName>
 		<label>Dreadnought</label>
@@ -59,14 +58,14 @@
 		</statBases>
 		<vehicleStats>
 			<Mass>500</Mass>
-			<MoveSpeed>9</MoveSpeed>
+			<MoveSpeed>4.6</MoveSpeed>
 			<CargoCapacity>200</CargoCapacity>
 			<RepairRate>0.2</RepairRate>
 		</vehicleStats>
 		<race>
 			<baseBodySize>4</baseBodySize>
 		</race>	
-		<properties>	<!-- 座位與功能 -->
+		<properties>
 			<customRoadCosts AssignDefaults = "0.3"/>
 			<worldSpeedMultiplier>1</worldSpeedMultiplier>
 			<winterSpeedMultiplier>1</winterSpeedMultiplier>
@@ -135,8 +134,7 @@
 				<label>transmission motor</label>
 				<health>40</health>
 				<depth>Internal</depth>
-			</li>			
-		<!-- External mobile Part 外部驅動部件-->		
+			</li>				
 			<li><!-- LeftTrack 150-->
 				<key>LeftLeg</key>
 				<label>left drive leg</label>
@@ -176,7 +174,6 @@
 					<side>Back</side>
 				</hitbox>
 			</li>
-		<!-- External Platings 外部防禦部件 -->
 			<li><!-- FrontArmorPlating 200-->
 				<key>FrontArmorPlating</key>
 				<label>front armor Plating</label>
@@ -236,14 +233,14 @@
 			</li>
 		</components>
 		<comps>
-			<li Class="Vehicles.CompProperties_FueledTravel">	<!-- 油箱與油耗 -->
+			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
 				<leakDef>Filth_Fuel</leakDef>
 				<fuelConsumptionRate>25</fuelConsumptionRate>
 				<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
 				<fuelCapacity>80</fuelCapacity>
 			</li>
-			<li Class="Vehicles.CompProperties_VehicleTurrets">	<!-- 砲塔 -->
+			<li Class="Vehicles.CompProperties_VehicleTurrets">
 				<turrets>
 					<li>
 						<turretDef>FA_MW_GrenadeLauncher</turretDef>
@@ -254,7 +251,7 @@
 							<east>(0, 0.25)</east>
 							<west>(0, 0.25)</west>
 						</renderProperties>
-						<aimPieOffset>(0, 1)</aimPieOffset>	<!-- 預熱指示器的x,z偏移 -->
+						<aimPieOffset>(0, 1)</aimPieOffset>
 						<drawLayer>2</drawLayer>						
 						<key>pilotcabin</key>
 					</li>
@@ -321,7 +318,7 @@
 	
 	
 	
- <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable"><!-- 建築型態的載具，基本上與BuildingDef相同-->
+ <Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
 		<defName>DreadnoughtRanged_Blueprint</defName>
 		<label>DreadnoughtRanged</label>
 		<description>Dreadnought Ranged description</description>
@@ -344,7 +341,7 @@
 			<Plasteel>50</Plasteel>
 			<Steel>200</Steel>
 		</costList>
-		<thingToSpawn>DreadnoughtRanged</thingToSpawn>	<!-- 建造後生成的載具Kind,這是與建築唯一不一樣的-->
+		<thingToSpawn>DreadnoughtRanged</thingToSpawn>
 		<designationCategory>VF_Vehicles</designationCategory>	
 		<researchPrerequisites>
 			<li>Machining</li>
@@ -352,7 +349,6 @@
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>	
 	</Vehicles.VehicleBuildDef>
 
-	<!-- 載具本體 -->
 	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 		<defName>DreadnoughtRanged</defName>
 		<label>DreadnoughtRanged</label>
@@ -379,14 +375,14 @@
 		</statBases>
 		<vehicleStats>
 			<Mass>500</Mass>
-			<MoveSpeed>9</MoveSpeed>
+			<MoveSpeed>4.6</MoveSpeed>
 			<CargoCapacity>200</CargoCapacity>
 			<RepairRate>0.2</RepairRate>
 		</vehicleStats>
 		<race>
 			<baseBodySize>4</baseBodySize>
 		</race>	
-		<properties>	<!-- 座位與功能 -->
+		<properties>
 			<customRoadCosts AssignDefaults = "0.3"/>
 			<worldSpeedMultiplier>1</worldSpeedMultiplier>
 			<winterSpeedMultiplier>1</winterSpeedMultiplier>
@@ -412,7 +408,6 @@
 			</roles>
 		</properties>	
 		<components>	
-
 			<li>
 				<key>Engine</key>
 				<label>Engine</label>
@@ -456,7 +451,7 @@
 				<health>40</health>
 				<depth>Internal</depth>
 			</li>			
-		<!-- External mobile Part 外部驅動部件-->		
+		<!-- External mobile Part-->		
 			<li><!-- LeftTrack 150-->
 				<key>LeftLeg</key>
 				<label>left drive leg</label>
@@ -496,7 +491,7 @@
 					<side>Back</side>
 				</hitbox>
 			</li>
-		<!-- External Platings 外部防禦部件 -->
+		<!-- External Platings -->
 			<li><!-- FrontArmorPlating 200-->
 				<key>FrontArmorPlating</key>
 				<label>front armor Plating</label>
@@ -556,14 +551,14 @@
 			</li>
 		</components>
 		<comps>
-			<li Class="Vehicles.CompProperties_FueledTravel">	<!-- 油箱與油耗 -->
+			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
 				<leakDef>Filth_Fuel</leakDef>
 				<fuelConsumptionRate>25</fuelConsumptionRate>
 				<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
 				<fuelCapacity>80</fuelCapacity>
 			</li>
-			<li Class="Vehicles.CompProperties_VehicleTurrets">	<!-- 砲塔 -->
+			<li Class="Vehicles.CompProperties_VehicleTurrets">
 				<turrets>
 					<li>
 						<turretDef>FA_MW_GrenadeLauncher</turretDef>
@@ -574,7 +569,7 @@
 							<east>(0, 0.25)</east>
 							<west>(0, 0.25)</west>
 						</renderProperties>
-						<aimPieOffset>(0, 1)</aimPieOffset>	<!-- 預熱指示器的x,z偏移 -->
+						<aimPieOffset>(0, 1)</aimPieOffset>
 						<drawLayer>2</drawLayer>						
 						<key>pilotcabin</key>
 					</li>
