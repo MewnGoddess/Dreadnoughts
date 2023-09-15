@@ -137,8 +137,7 @@
 					<CargoCapacity>200</CargoCapacity>
 				</value>
 			</li> -->
-
-			<!-- 正面裝甲 -->
+			
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="FrontArmorPlating"]/health</xpath>
 				<value>
@@ -157,7 +156,6 @@
 					<ArmorRating_Sharp>40</ArmorRating_Sharp>
 				</value>
 			</li>
-			<!-- 側面裝甲左 -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="LeftArmorPlating"]/health</xpath>
 				<value>
@@ -176,7 +174,6 @@
 					<ArmorRating_Sharp>32</ArmorRating_Sharp>
 				</value>
 			</li>
-			<!-- 側面裝甲右 -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="RightArmorPlating"]/health</xpath>
 				<value>
@@ -195,8 +192,6 @@
 					<ArmorRating_Sharp>32</ArmorRating_Sharp>
 				</value>
 			</li>
-
-			<!-- 背面裝甲 -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="BackArmorPlating"]/health</xpath>
 				<value>
@@ -215,8 +210,6 @@
 					<ArmorRating_Sharp>15</ArmorRating_Sharp>
 				</value>
 			</li>
-
-			<!-- 頂部裝甲 -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]/components/li[key="RoofArmorPlating"]/health</xpath>
 				<value>
