@@ -265,7 +265,7 @@
 							<west>(0.2, -0.8)</west>
 						</renderProperties>
 						<aimPieOffset>(0, 0)</aimPieOffset>
-						<angleRestricted>(300, 60)</angleRestricted>	
+						<angleRestricted>(285, 75)</angleRestricted>	
 						<drawLayer>1</drawLayer>
 						<key>leftGun</key>
 						<parentKey>pilotcabin</parentKey>
@@ -280,7 +280,7 @@
 							<west>(0.2, 0.8)</west>
 						</renderProperties>
 						<aimPieOffset>(0, 0)</aimPieOffset>
-						<angleRestricted>(300, 60)</angleRestricted>	
+						<angleRestricted>(285, 75)</angleRestricted>	
 						<drawLayer>1</drawLayer>
 						<key>rightGun</key>
 						<parentKey>pilotcabin</parentKey>
@@ -583,7 +583,7 @@
 							<west>(0.2, -0.8)</west>
 						</renderProperties>
 						<aimPieOffset>(0, 0)</aimPieOffset>
-						<angleRestricted>(300, 60)</angleRestricted>	
+						<angleRestricted>(285, 75)</angleRestricted>	
 						<drawLayer>1</drawLayer>
 						<key>leftGun</key>
 						<parentKey>pilotcabin</parentKey>
@@ -598,7 +598,7 @@
 							<west>(0.2, 0.8)</west>
 						</renderProperties>
 						<aimPieOffset>(0, 0)</aimPieOffset>
-						<angleRestricted>(300, 60)</angleRestricted>	
+						<angleRestricted>(285, 75)</angleRestricted>	
 						<drawLayer>1</drawLayer>
 						<key>rightGun</key>
 						<parentKey>pilotcabin</parentKey>
